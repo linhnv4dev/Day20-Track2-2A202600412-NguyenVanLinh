@@ -16,7 +16,7 @@ Write-Host "    ctx       : $ctx"
 Write-Host "    listening : http://0.0.0.0:8080"
 Write-Host ""
 
-python -m llama_cpp.server `
+.venv/bin/python -m llama_cpp.server `
     --model "$model" `
     --host 0.0.0.0 --port 8080 `
     --n_threads $threads `

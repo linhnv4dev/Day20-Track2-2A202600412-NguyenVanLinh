@@ -20,7 +20,7 @@ echo "    ctx       : $CTX"
 echo "    listening : http://0.0.0.0:8080"
 echo
 
-exec python -m llama_cpp.server \
+exec .venv/bin/python -m llama_cpp.server \
     --model "$MODEL" \
     --host 0.0.0.0 --port 8080 \
     --n_threads "$THREADS" \
